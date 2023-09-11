@@ -79,28 +79,42 @@
 
 // console.log(parents);
 
-const input = document.querySelector("input");
-const form = document.querySelector("form");
-const btn = document.querySelector("button");
+// const input = document.querySelector("input");
+// const form = document.querySelector("form");
+// const btn = document.querySelector("button");
 
 // input.addEventListener('input', (event) => {
 //   value = event.target.value;
 //   console.log(value);
 // });
 
-form.addEventListener("submit", (event) => {
-  event.preventDefault;
-  const message = document.createElement("h2");
+// form.addEventListener("submit", (event) => {
+//   event.preventDefault;
+//   const message = document.createElement("h2");
 
-  if (input.value === "") {
-    message.textContent = "Вы не заполнили поле!!!";
-    message.style.border = "2px solid red";
-  } else {
-    message.textContent = "Вы заполнили поле!!!";
-    message.style.border = "2px solid gray";
-  }
-  form.appendChild(message);
-  setTimeout(() => {
-    message.remove();
-  }, 1000);
+//   if (input.value === "") {
+//     message.textContent = "Вы не заполнили поле!!!";
+//     message.style.border = "2px solid red";
+//   } else {
+//     message.textContent = "Вы заполнили поле!!!";
+//     message.style.border = "2px solid gray";
+//   }
+//   form.appendChild(message);
+//   setTimeout(() => {
+//     message.remove();
+//   }, 1000);
+// });
+
+// const buttonEls = document.querySelectorAll("button");
+
+// console.log(buttonEls);
+
+// buttonEls.forEach((element) => {
+//   element.onclick = function (params) {
+//     console.log(`Нажал кнопку ${element.textContent}`);
+//   };
+// });
+
+document.querySelector(".btn5").addEventListener("click", function () {
+  this.textContent = "JS поменял текст";
 });
