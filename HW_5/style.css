@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+  max-width: 1800px;
+  padding-left: 50px;
+  padding-top: 50px;
+}
+
+.cart {
+    background-color: beige;
+}
+
+.cart__img {
+  max-width: 250px;
+}
+
+.cart__title {
+  max-width: 250px;
+  margin-top: 10px;
+}
+
+.cart__date-start {
+  margin-top: 10px;
+}
+
+.cart__date-end {
+  margin-top: 10px;
+}
+
+.cart__id {
+  margin-top: 10px;
+}
